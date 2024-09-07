@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+body {
+  /* background-color: #1976d2; */
+  background-image: url("./pexels-pixabay-531767.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-clip: content-box;
+}
+.card {
+  background-image: url("./pexels-photo-259620.jpeg");
+  color: rgb(201, 235, 227) !important;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Fonts */
+@font-face {
+  font-family: RubicBold;
+  src: url("/public/Fonts/Robics/static/Rubik-ExtraBold.ttf");
+}
+@font-face {
+  font-family: RubicMd;
+  src: url("/public/Fonts/Robics/static/Rubik-Medium.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: RubicReg;
+  src: url("/public/Fonts/Robics/static/Rubik-Regular.ttf");
+  font-weight: 400;
+}
+
+.img-icon {
+  max-width: 200px; /* Ensures the image doesn't get larger than 200px */
+}
+
+@media (max-width: 600px) {
+  .img-icon {
+    max-width: 170px; /* Adjusts the max width for smaller screens */
+    height: max-content;
+  }
+}
+
+@media (max-width: 500px) {
+  .typ-style {
+    font-size: 12px !important;
+  }
+  .cont-style {
+    width: 70px !important;
+  }
+  .op-style {
+    font-size: 12px !important;
+  }
+  .typBody2 img {
+    position: relative;
+    width: 150px;
+  }
+  .font-typ {
+    font-size: 10px !important;
+  }
+}
+@media (min-width: 600px) {
+  .typBody2 img {
+    position: relative;
+    width: 300px;
+  }
+  .font-typ {
+    font-size: 18px !important;
+  }
+}
+/* @media (max-width: 900px) {
+  .typBody2 img {
+    position: relative;
+    width: 300px;
+  }
+  .font-typ {
+    font-size: 20px !important;
+  }
+} */
+
+@media (min-width: 1000px) {
+  .typBody2 img {
+    position: relative;
+    width: 400px !important;
+  }
+  .font-typ {
+    font-size: 25px !important;
+  }
+  .cont-footer {
+    height: 50svh !important;
+  }
+  h6 {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .typBody2 img {
+    position: relative;
+    width: 150px;
+  }
+  .font-typ {
+    font-size: 10px;
+  }
+
+  h6 {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 600px) {
+  .typBody2 img {
+    position: relative;
+    width: 250px;
+  }
+  .font-typ {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 8px;
+  }
+  .cont-footer {
+    height: 60svh !important ;
+  }
+}
+@media (max-width: 300px) {
+  .typBody2 img {
+    position: relative;
+    width: 90px;
+  }
+  .font-typ {
+    font-size: 9px !important;
+  }
+  h6 {
+    font-size: 7px;
+  }
+  .cont-footer {
+    height: 40svh !important;
+  }
+}
+@media (max-width: 310px) {
+  .typ-style {
+    font-size: 8px !important;
+  }
+  .cont-style {
+    width: 80px !important;
+  }
+  .op-style {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 278px) {
+  .typ-style {
+    font-size: 6px !important;
+  }
+  .cont-style {
+    width: 40px !important;
+  }
+  .op-style {
+    font-size: 10px !important;
+  }
+  h6 {
+    font-size: 6px;
+  }
+}
+
+.title-style {
+  height: 100px;
+  font-family: RubicBold !important;
+  color: #ffd54f;
+}
+
+.cont-footer {
+  width: 100%;
+  background: linear-gradient(to right, #c8dff0a6, #9257f79a);
+}
+
+.typBody {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #5e027a;
+  font-style: italic;
+}
+.footer {
+  background: linear-gradient(to right, #c8dff0a6, #9257f79a);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 0;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+}
